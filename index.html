@@ -19,6 +19,103 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Google Font  : Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .prompt {
+        font-family: "Prompt", sans-serif;
+        font-style: normal;
+      }
+    </style>
   </head>
-  <body></body>
+  <body class="prompt">
+    <header>
+      <nav class="bg-gray-100 shadow-sm fixed top-0 z-10 w-full px-2 md:px-0">
+        <div class="flex justify-between py-2 container mx-auto items-center">
+          <div>
+            <h2 class="text-2xl font-semibold">SPRING</h2>
+          </div>
+          <div>
+            <div
+              class="text-md gap-4 items-center flex justify-between hidden md:inline-flex"
+            >
+              <p>Home</p>
+              <p>Contact</p>
+              <p>Blog</p>
+              <p>Support</p>
+              <p>About</p>
+              <button class="btn btn-neutral rounded-full font-medium">
+                Get Start
+                <i
+                  class="fa-solid fa-arrow-right-long fa-beat"
+                  style="color: rgb(255, 255, 255)"
+                ></i>
+              </button>
+            </div>
+            <!-- Sidebar -->
+            <div class="inline-block md:hidden">
+              <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+              <div class="drawer-content flex flex-col">
+                <!-- Navbar -->
+                <div class="bg-base-300">
+                  <div class="flex-none">
+                    <label
+                      for="my-drawer-2"
+                      aria-label="open sidebar"
+                      class="btn btn-square btn-ghost"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-6 w-6 stroke-current"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="drawer-side">
+                <label
+                  for="my-drawer-2"
+                  aria-label="close sidebar"
+                  class="drawer-overlay"
+                ></label>
+                <ul
+                  class="menu bg-base-200 min-h-full w-50 p-4 shadow-sky-300 gap-2"
+                >
+                  <!-- Sidebar content here -->
+                  <li><a class="btn rounded-full">Home</a></li>
+                  <li><a class="btn rounded-full">Contact</a></li>
+                  <li><a class="btn rounded-full">Blog</a></li>
+                  <li><a class="btn rounded-full">Support</a></li>
+                  <li><a class="btn rounded-full">About</a></li>
+                  <li>
+                    <button class="btn btn-neutral rounded-full font-medium">
+                      Get Start
+                      <i
+                        class="fa-solid fa-arrow-right-long fa-beat"
+                        style="color: rgb(255, 255, 255)"
+                      ></i>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
